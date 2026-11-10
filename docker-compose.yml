@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  cliente:
+    image: alpine:latest
+    container_name: contenedor-cliente
+    command: sleep infinity
+    networks:
+      - red-integracion
+
+  servidor:
+    image: alpine:latest
+    container_name: contenedor-servidor
+    command: sleep infinity
+    networks:
+      - red-integracion
+
+networks:
+  red-integracion:
+    driver: bridge
