@@ -1,20 +1,18 @@
-# Proyecto Integración Continua - Entrega 1
+# Proyecto Integración Continua - Laboratorio Dental
 
-## Objetivo
-Implementar dos contenedores Docker comunicados entre sí para la primera entrega del proyecto.
+## Objetivo del Proyecto
+Este repositorio contiene el proyecto de una aplicación móvil desarrollada en **Ionic y Angular**. El objetivo es implementar y demostrar prácticas de Integración Continua (CI) a lo largo del semestre, evidenciando un desarrollo iterativo e incremental.
 
-## Arquitectura
-Se configuró una red interna de Docker llamada "red-integracion" y se crearon dos contenedores basados en la imagen `docker/getting-started`:
-1. **contenedor-cliente**: Inicia la comunicación.
-2. **contenedor-servidor**: Recibe la comunicación.
+## Estado del Proyecto (Evolución)
 
-Ambos están conectados a la misma red, lo que permite que se resuelvan por nombre (DNS interno de Docker) sin necesidad de exponer puertos al exterior.
+### Fase 1 (Entrega 1): Configuración Base e Infraestructura Docker
+En esta primera etapa, se ha establecido la base del proyecto. Se subieron los archivos de configuración de dependencias (como 'package.json' y 'angular.json') para inicializar el entorno de desarrollo.
 
-## Demostración de comunicación
-Se realizó la validación del entorno ejecutando un ping desde el contenedor cliente hacia el contenedor servidor a través de la red interna de Docker.
+Adicionalmente, se implementó la infraestructura base de contenedores:
+*   **Red Docker:** Se configuró una red interna llamada 'red-integracion'.
+*   **Contenedores:** Se crearon dos contenedores ('contenedor-cliente' y 'contenedor-servidor') para validar la comunicación y resolución de nombres (DNS interno de Docker).
 
-A continuación, se adjunta la evidencia de la ejecución exitosa:
+#### Evidencia de Ejecución (Docker)
+A continuación, se adjunta la evidencia del ping exitoso entre los contenedores, comprobando la correcta comunicación:
 
 ![Evidencia Ping](evidencia-ping.png)
-
-*(Nota: El archivo 'docker-compose.yml' incluido en este repositorio contiene la configuración equivalente para desplegar estos mismos contenedores en cualquier entorno con Docker Compose instalado).*
