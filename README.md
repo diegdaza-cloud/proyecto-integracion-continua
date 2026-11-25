@@ -16,3 +16,9 @@ Adicionalmente, se implementó la infraestructura base de contenedores:
 A continuación, se adjunta la evidencia del ping exitoso entre los contenedores, comprobando la correcta comunicación:
 
 ![Evidencia Ping](evidencia-ping.png)
+
+## Fase 2 (Entrega 2): Implementación de Jenkins como Gestor de Operaciones
+En esta etapa se incorporó **Jenkins** ('jenkins/jenkins:latest') como gestor de operaciones de integración continua sobre la red interna 'red-integracion' en el entorno de laboratorio LabEx, manteniendo la vinculación con este repositorio (rama 'main') para la aplicación del laboratorio dental en Ionic/Angular.
+- **Job configurado:** 'Proyecto-Laboratorio-Dental-CI' (tipo *Freestyle*), exponiendo el puerto '8080' para la interfaz web y el '50000' para agentes/nodos.
+- **Ejecución y validación:** Build '#1' completado con estado 'Finished: SUCCESS', verificando la estructura base, simulando la compilación (*build*) y comprobando pruebas unitarias.
+- **Avance incremental:** Consolidación de la documentación y archivos base del proyecto móvil manteniendo margen para la siguiente entrega.
