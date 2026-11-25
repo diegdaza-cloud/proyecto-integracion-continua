@@ -22,3 +22,8 @@ En esta etapa se incorporó **Jenkins** ('jenkins/jenkins:latest') como gestor d
 - **Job configurado:** 'Proyecto-Laboratorio-Dental-CI' (tipo *Freestyle*), exponiendo el puerto '8080' para la interfaz web y el '50000' para agentes/nodos.
 - **Ejecución y validación:** Build '#1' completado con estado 'Finished: SUCCESS', verificando la estructura base, simulando la compilación (*build*) y comprobando pruebas unitarias.
 - **Avance incremental:** Consolidación de la documentación y archivos base del proyecto móvil manteniendo margen para la siguiente entrega.
+
+### Evidencia de Ejecución (Jenkins)
+A continuación se adjunta la salida de consola del build '#1' del job 'Proyecto-Laboratorio-Dental-CI' con estado exitoso ('Finished: SUCCESS'):
+
+![Evidencia Jenkins Build Success](Finished%20SUCCESS.png)
